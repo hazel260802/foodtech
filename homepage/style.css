@@ -1,0 +1,377 @@
+html {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  background-color: #fff3e0;
+  scroll-behavior: smooth;
+  /* max-width: 1000px; */
+  box-sizing: border-box;
+}
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+@media only screen and (max-width:1100px) {
+  html {
+    font-size: 65%;
+  }
+  /* .navbar-brand{
+      margin-right: 20px;
+  } */
+  .nav-link{
+      margin-left: -30px;
+      font-size: 130%;
+  }
+  .footer{
+      font-size: 130%;
+  }
+  .main-section{
+      margin-left: -10%;
+  }
+  /* .food-picture img{
+      width: 60%;
+      height: 1px;
+  } */
+}
+
+/* 980px / 16px = 61.25em */
+/* @media (max-width: 1023px) {
+  html {
+    font-size: 58%;
+  }
+} */
+
+/* 460px / 16px = 28.75em */
+@media only screen and (max-width:990px) {
+  html {
+    font-size: 65%;
+  }
+.main-section{
+  margin-left: -30%;
+  width: 200px;
+  }
+  /* .navbar-brand,.nav-link{
+      margin-left: 100px;
+  } */
+  /* .logo{
+      margin-right: 0px;
+  } */
+  /* .main-section img{
+      width: 70%;
+  } */
+  .nav-link{
+      text-align: center;
+      font-size: 120%;
+  }
+  .navbar-brand,.slogan{
+      margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  html {
+    font-size: 55%;
+  }
+  /* .navbar-nav{
+      display: none;
+  }
+
+  .nav-icon{
+      display: block;
+  } */
+  .food-picture img{
+      width: 100%;
+  }
+  .logo{
+      margin-left: 20px;
+  }
+  .slogan,.navbar-brand,.logo{
+      margin-right: 0px;
+  }
+  .main-section{
+      margin-left: -40%;
+      width:auto;
+  }
+}
+/* Base styles */
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background: #e0ad9f;
+}
+/*--------------------Navigation Bar-----------------*/
+.nav1{
+  border: 1px solid white;
+  padding-top: 2px;
+  /* padding-right: 20px; */
+  margin-top: 10px;
+  /* width: fit-content; */
+  background-color: #fff3e0 !important;
+}
+.logo{
+  width: 60px;
+  size: 1;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.navbar-brand{
+  color: rgba(239,139,111,400);
+  font-weight: 648;
+  margin-top: 3px;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 380px;
+  letter-spacing: 2px;
+}
+
+.slogan{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 648;
+  margin-left: 20px;
+}
+.nav-link{
+  color: #ef8b6f;
+  font-weight: 648;
+  margin-top: 5px;
+  /* margin-left: 90px; */
+  margin-right: 70px;
+  transition: border-bottom 2s;
+}
+
+.nav-link:hover,
+.nav-link:active{
+  border-bottom: 2px solid #ebd0c9;
+}
+
+.nav-icon{
+  font-size: 150%;
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  display: none;
+}
+/* Welcome section */
+.image-wrapper {
+  display: flex;
+  position: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0 2rem;
+  background: #f5c6a5;
+  margin-top: 0;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  transition: transform 0.3s ease-out;
+}
+.contact-details:hover {
+  transform: translateY(8px);
+}
+/*Side bar*/
+.btn-info {
+  background-color: #fff3e0;
+  color: #e99c86;
+  border-color: #fff3e0;
+  float: left;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  width: 250px;
+  top: 0;
+  left: 0;
+  height: 150vh;
+  z-index: 999;
+  background: #fff3e0;
+  color: #ef8b6f;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #fff3e0;
+  font-weight: bold;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #fff3e0;
+}
+
+#sidebar ul p {
+  color: #e99c86;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #e99c86;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #e99c86;
+  background: #fff3e0;
+}
+a[aria-expanded="false"] {
+  color: #333;
+  background: #fff3e0;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #fff3e0;
+  color: #333;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #fff3e0;
+}
+
+a.article,
+a.article:hover {
+  background: #fff3e0 !important;
+  color: #e99c86 !important;
+}
+/* CONTENT STYLE*/
+
+#content {
+  width: calc(100% - 250px);
+  padding: 40px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+}
+
+#content.active {
+  width: 100%;
+}
+/* MEDIAQUERIES */
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+  }
+  #content.active {
+    width: calc(100% - 250px);
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+/*Introduction*/
+.exp-img {
+  width: 3em;
+  height: 2.25em;
+}
+ol {
+  font-weight: bold; /* If you want it to be bold */
+  color: #fff3e0;
+}
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+p {
+  color: #333 !important;
+}
+/* Footer section */
+.footer {
+  background-color: #f5c6a5;
+  height: auto;
+}
+.text-uppercase {
+  font-weight: 700;
+  color: #747474;
+  font-size: 0.875em;
+}
+.link {
+  color: rgba(29, 31, 46, 0.7);
+}
+
