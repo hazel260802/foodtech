@@ -1,0 +1,371 @@
+html{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    background-color: #fff3e0;
+    scroll-behavior: smooth;
+    /* max-width: 1000px; */
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:1100px) {
+    html {
+      font-size: 65%;
+    }
+    /* .navbar-brand{
+        margin-right: 20px;
+    } */
+    .nav-link{
+        margin-left: -30px;
+        font-size: 130%;
+    }
+    .footer{
+        font-size: 130%;
+    }
+    .main-section{
+        margin-left: -10%;
+    }
+    /* .food-picture img{
+        width: 60%;
+        height: 1px;
+    } */
+  }
+  
+  /* 980px / 16px = 61.25em */
+  /* @media (max-width: 1023px) {
+    html {
+      font-size: 58%;
+    }
+  } */
+  
+  /* 460px / 16px = 28.75em */
+@media only screen and (max-width:990px) {
+    html {
+      font-size: 65%;
+    }
+    /* .navbar-brand,.nav-link{
+        margin-left: 100px;
+    } */
+    /* .logo{
+        margin-right: 0px;
+    } */
+    /* .main-section img{
+        width: 70%;
+    } */
+    .nav-link{
+        text-align: center;
+        font-size: 120%;
+    }
+    .navbar-brand,.slogan{
+        margin-left: 0px;
+    }
+  }
+
+@media only screen and (max-width:600px) {
+    html {
+      font-size: 50%;
+    }
+    /* .navbar-nav{
+        display: none;
+    }
+  
+    .nav-icon
+        display: block;
+    } */
+    .food-picture img{
+        width: 30%;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .slogan,.navbar-brand,.logo{
+        margin-right: 0px;
+    }
+    .main-section{
+        margin-left: -40%;
+        width:auto;
+    }
+  }
+/*--------------------Navigation Bar-----------------*/
+.navbar{
+    border: 1px solid white;
+    padding-top: 2px;
+    /* padding-right: 20px; */
+    margin-top: 10px;
+    /* width: fit-content; */
+}
+.logo{
+    width: 60px;
+    size: 1;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.navbar-brand{
+    color: rgba(239,139,111,400);
+    font-weight: 648;
+    margin-top: 3px;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 380px;
+    letter-spacing: 2px;
+}
+
+.slogan{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 648;
+    margin-left: 20px;
+}
+.nav-link{
+    color: #ef8b6f;
+    font-weight: 648;
+    margin-top: 5px;
+    /* margin-left: 90px; */
+    margin-right: 70px;
+    transition: border-bottom 2s;
+}
+
+.nav-link:hover,
+.nav-link:active{
+    border-bottom: 2px solid #ebd0c9;
+}
+
+.nav-icon{
+    font-size: 150%;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    display: none;
+}
+/*-----------------Ingredient Section-------------------*/
+
+.ingredient{
+    color: #fff3e0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h2{
+    text-align: center;
+    /* margin-left: 100px; */
+    margin-bottom: 60px;
+    color: #ef8b6f;
+    font-size: 4em;
+    height: 40px;
+    font-weight: 440;
+}
+
+.food-picture img,p,h4{
+    margin-left: 25px;
+}
+.food-picture img{
+    width: 80%;
+    height: 300px;
+    /* transition: all .5s; */
+}
+
+.food-picture img:hover,
+.food-picture img:active{
+    transform: scale(1.1);
+}
+h3{
+    text-align: left;
+    color: #ef8b6f;
+    font-size: 22px;
+    font-weight: 700;
+    height: 15px;
+    margin-left: 15px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+h4{
+    color: black;
+    font-size: 20px;
+    height: 30px;
+    font-weight: 490;
+    margin-top: 10px;
+}
+.btn-ingre{
+    background-color: #f0bcad;
+    border-color: #f0bcad;
+    border-bottom: #f0bcad;
+    border-right: #f0bcad;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-weight: 648;
+    border-radius: 20px;
+}
+
+.btn-ingre a{
+    color: white;
+}
+.carousel-control-prev,.carousel-control-next{
+    width: 3%;
+}
+/* .carousel-control-prev-icon,.carousel-control-next-icon{
+    color: black;
+} */
+
+
+/* d-block{
+    width: 50%;
+} */
+
+/*-----------------Footer-------------------*/
+.link{
+    color:black;
+    line-height: 40px;
+}
+/* Contact section */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+    background: #f5c6a5;
+    margin-top: 0;
+}
+
+.contact-links {
+    display: inline;
+    justify-content: center;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0px 0;
+    flex-wrap: wrap;
+}
+
+  
+.contact-details {
+    transition: transform 0.3s ease-out;
+} 
+.contact-details:hover {
+    transform: translateY(8px);
+}
+/* Footer section */
+.footer {
+    background-color: #f5c6a5;
+    height: auto;
+}
+
+.footer p{
+    text-align: center;
+    line-height: 20px;
+    width: 100%;
+    line-height: 25px;
+}
+
+.text-uppercase{
+    margin-left: 40px;
+}
+
+/* -------------------------------------------- */
+/* ----------------ingredient-detailed--------- */
+
+.main-section{
+    /* position: relative;
+    top: 20px;
+    left: 20%; */
+    margin-top: 50px;
+    margin-left: 18%;
+    margin-bottom: 50px;
+    width: 80%;
+}
+.heading{
+    margin-top: 40px;
+    /* margin-left: 100px; */
+    margin-bottom: 20px;
+}
+
+.heading a{
+    color: #7fd6ab;
+    font-weight: 400;
+    font-size: 110%;
+    text-decoration: none;
+}
+
+.food-name{
+    text-align: left;
+    font-size: 250%;
+    font-weight: 480;
+    margin-bottom: 35px;
+}
+
+.food-image{
+    width: 80%;
+    height: 500px;
+    /* margin-left: 100px; */
+}
+
+.main-section .sub-section{
+    font-weight: 500;
+    font-size: 130%;
+    color: black;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.main-section p{
+    font-weight: 480;
+    font-size: 120%;
+    text-align: left;
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+.info-detailed ul li{
+    margin-left: 55px;
+    list-style:inside;
+    line-height: 28px;
+    font-size: 120%;
+    width: 75%;
+}
+
+.icon-subsection{
+    display: flex;
+    vertical-align: middle;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.icon-subsection p{
+    font-weight: 500;
+}
+.icon-subsection img{
+    width: 50px;
+    margin-right: -25px;
+}
+
+.dish-image{
+    width: 80%;
+    height: 500px;
+    height: 550px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+span{
+    color: #ef8b6f;
+}
+
+
+
+
+
+
